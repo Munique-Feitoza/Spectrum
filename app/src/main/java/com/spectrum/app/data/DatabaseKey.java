@@ -49,7 +49,14 @@ public final class DatabaseKey {
         File file;
         Intrinsics.checkNotNullParameter(context, "context");
         file = new File(context.getFilesDir(), WRAPPED_FILE);
-        return file.exists() ? unwrap(FilesKt.readBytes(file)) : create(file);
+        if (file.exists()) {
+            try {
+                return unwrap(FilesKt.readBytes(file));
+            } catch (Throwable t) {
+                return create(file);
+            }
+        }
+        return create(file);
     }
 
     private final byte[] create(File file) throws BadPaddingException, NoSuchPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, InvalidKeyException {
