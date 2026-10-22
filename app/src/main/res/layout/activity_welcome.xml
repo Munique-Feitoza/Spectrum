@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="?attr/textAppearanceHeadlineMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spectrum"/>
+        <TextView
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Isto fica neste aparelho. Sem conta, sem senha, sem internet."/>
+        <TextView
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quem vai usar?"/>
+        <RadioGroup
+            android:id="@+id/who"
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/whoAdult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:text="Eu, no meu ritmo"/>
+            <RadioButton
+                android:id="@+id/whoSimple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Eu, mas com tudo mais simples (bom na sobrecarga)"/>
+            <RadioButton
+                android:id="@+id/whoChild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Uma criança — palavras curtas, sem escalas clínicas"/>
+        </RadioGroup>
+        <EditText
+            android:id="@+id/personName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="48dp"
+            android:hint="Nome de quem usa o app (opcional)"
+            android:inputType="textCapWords"/>
+        <TextView
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CIDs já diagnosticados"/>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marque o que o médico ou a neuropsicóloga já registrou. O app não diagnostica — só se adapta para ajudar a relatar o dia."/>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cidChips"
+            android:paddingTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/cidExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Outro CID (ex.: F84.8)"
+            android:inputType="textCapCharacters"/>
+        <TextView
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Como se comunica?"/>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Isso escolhe o tamanho dos botões. Não é diagnóstico."/>
+        <RadioGroup
+            android:id="@+id/comm"
+            android:paddingTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/commSpeaks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:text="Fala frases"/>
+            <RadioButton
+                android:id="@+id/commFew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Poucas palavras"/>
+            <RadioButton
+                android:id="@+id/commAac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Prancha, gestos ou CAA"/>
+            <RadioButton
+                android:id="@+id/commNon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Principalmente toque e imagem"/>
+        </RadioGroup>
+        <TextView
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nível de apoio no dia a dia (os 3)"/>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Já existe diagnóstico. Isto só descreve quanto apoio a pessoa precisa hoje, para o relato fazer sentido."/>
+        <RadioGroup
+            android:id="@+id/support"
+            android:paddingTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/supNone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:text="Não se aplica / não informar"/>
+            <RadioButton
+                android:id="@+id/sup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Apoio 1 — pouco apoio no cotidiano"/>
+            <RadioButton
+                android:id="@+id/sup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Apoio 2 — apoio frequente"/>
+            <RadioButton
+                android:id="@+id/sup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Apoio 3 — apoio intenso, inclusive para comunicar"/>
+        </RadioGroup>
+        <TextView
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pessoa de confiança (opcional)"/>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:paddingTop="4dp"
+            android:paddingBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome e telefone ficam só aqui. Aparecem no botão de ajuda."/>
+        <EditText
+            android:id="@+id/trustName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Nome (mãe, pai, tia, terapeuta…)"
+            android:inputType="textCapWords"/>
+        <EditText
+            android:id="@+id/trustPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Telefone (opcional)"
+            android:inputType="phone"/>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nada aqui vira laudo. É um diário de toques para a pessoa se expressar e para quem cuida enxergar o que aconteceu."/>
+        <Button
+            android:id="@+id/continuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:minHeight="52dp"
+            android:text="Entrar com calma"/>
+    </LinearLayout>
+</ScrollView>

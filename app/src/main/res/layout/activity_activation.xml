@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ativação comportamental"/>
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:paddingTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registre uma atividade que você fez e avalie como foi. Com o tempo, isso mostra o que levanta o seu humor."/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/sprig"
+                android:contentDescription="@null"/>
+        </LinearLayout>
+        <TextView
+            android:text="Atividade"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/atividade"
+            android:hint="O que você fez? (ex.: caminhei, liguei para alguém)"
+            android:inputType="textCapSentences"
+            style="@style/RpdField"/>
+        <TextView
+            android:id="@+id/prazerVal"
+            style="@style/RpdLabel"/>
+        <SeekBar
+            android:id="@+id/prazer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"/>
+        <TextView
+            android:id="@+id/dominioVal"
+            style="@style/RpdLabel"/>
+        <SeekBar
+            android:id="@+id/dominio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"/>
+        <TextView
+            android:text="Nota (opcional)"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/nota"
+            android:hint="Como foi? Algum detalhe?"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <Button
+            android:id="@+id/salvarAtividade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Salvar"/>
+        <TextView
+            android:textSize="13sp"
+            android:id="@+id/activLog"
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

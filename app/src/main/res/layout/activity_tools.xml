@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuidado"/>
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:paddingTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primeiro o que regula o corpo. Depois, se sobrar energia, as ferramentas da sessão."/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/sprig"
+                android:contentDescription="@null"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/toolSensory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Check sensorial"/>
+        <Button
+            android:id="@+id/toolBattery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Bateria social e do corpo"/>
+        <Button
+            android:id="@+id/toolOverload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Plano de sobrecarga"/>
+        <Button
+            android:id="@+id/toolRpd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Registro de pensamentos (RPD)"/>
+        <Button
+            android:id="@+id/toolActivation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Ativação comportamental"/>
+        <Button
+            android:id="@+id/toolAbc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="ABC / gatilhos"/>
+        <Button
+            android:id="@+id/toolPhq9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Escala PHQ-9 (depressão)"/>
+        <Button
+            android:id="@+id/toolGad7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Escala GAD-7 (ansiedade)"/>
+        <Button
+            android:id="@+id/toolSafety"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Plano de segurança"/>
+        <Button
+            android:id="@+id/toolLook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Aparência · plantas"/>
+        <Button
+            android:id="@+id/toolFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Resumo para família / especialista"/>
+        <Button
+            android:id="@+id/toolWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Quem usa / apoio / comunicação"
+            style="@style/Widget.Material3.Button.TextButton"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bateria de hoje"/>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:paddingTop="4dp"
+            android:paddingBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duas coisas diferentes: corpo e gente. Dá para estar descansada e ainda sem bateria social."/>
+        <TextView
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bateria social"/>
+        <SeekBar
+            android:id="@+id/social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="5"/>
+        <TextView
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:id="@+id/socialLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 / 10"/>
+        <TextView
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:paddingTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Energia do corpo"/>
+        <SeekBar
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="5"/>
+        <TextView
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:id="@+id/bodyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 / 10"/>
+        <Button
+            android:id="@+id/salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Registrar como estou"/>
+    </LinearLayout>
+</ScrollView>

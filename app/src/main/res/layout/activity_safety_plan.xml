@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plano de Segurança"/>
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:paddingTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feito idealmente junto com sua terapeuta. Fica sempre acessível pelo botão de ajuda."/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/sprig"
+                android:contentDescription="@null"/>
+        </LinearLayout>
+        <TextView
+            android:text="1. Sinais de alerta"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/sinaisAlerta"
+            android:hint="Pensamentos, sensações ou situações que indicam que a crise pode começar"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="2. O que posso fazer sozinha para me acalmar"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/estrategias"
+            android:hint="Ex.: música, caminhar, banho, respiração, escrever"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="3. Pessoas e lugares que me distraem"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/pessoasDistracao"
+            android:hint="Quem/onde me ajuda a desviar o foco"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="4. Pessoas a quem pedir ajuda"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/pessoasAjuda"
+            android:hint="Nome e telefone de quem posso procurar"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="5. Profissionais e serviços de crise"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/profissionais"
+            android:hint="CVV, SAMU, minha terapeuta…"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="6. Deixar meu ambiente mais seguro"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/ambienteSeguro"
+            android:hint="Como reduzir o acesso a coisas que possam me machucar"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <Button
+            android:id="@+id/salvarPlano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Salvar plano"/>
+    </LinearLayout>
+</ScrollView>

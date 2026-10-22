@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plano de sobrecarga"/>
+        <TextView
+            android:textSize="13sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para quando o mundo fica alto demais. Preenche no calmo, usa no cheio. Não é plano de crise."/>
+        <TextView
+            android:text="Sinais de que está enchendo"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/sinais"
+            android:hint="Ex.: barulho, muita gente, conversa rápida, luz, imprevisto"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="O que fazer em 1 minuto"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/umMinuto"
+            android:hint="Ex.: sair do cômodo, fone, quarto escuro, objeto de stim"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="O que não preciso fazer agora"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/evitar"
+            android:hint="Ex.: explicar, continuar a conversa, ‘se esforçar’"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="Frase pronta para mandar"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/frase"
+            android:hint="Ex.: preciso de 20 min sozinha, depois volto"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="Âncora / interesse que regula"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/ancora"
+            android:hint="Uma coisa concreta: vídeo, música, objeto, tema"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <Button
+            android:id="@+id/salvarPlano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Guardar com carinho"/>
+    </LinearLayout>
+</ScrollView>

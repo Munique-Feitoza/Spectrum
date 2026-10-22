@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aparência"/>
+        <TextView
+            android:textSize="14sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:paddingTop="6dp"
+            android:paddingBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plantas e terra. Escolha o clima que acalma você. O sistema claro/escuro do celular continua valendo."/>
+        <Button
+            android:id="@+id/themeSage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="56dp"
+            android:text="Sálvia — folha clara, o padrão"/>
+        <Button
+            android:id="@+id/themeForest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="56dp"
+            android:text="Mata — sombra de árvore"/>
+        <Button
+            android:id="@+id/themeMist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="56dp"
+            android:text="Névoa — eucalipto e chuva"/>
+        <Button
+            android:id="@+id/themeLinen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="56dp"
+            android:text="Linho — sol filtrado"/>
+        <Button
+            android:id="@+id/themeDusk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="56dp"
+            android:text="Crepúsculo — musgo e lavanda"/>
+        <Button
+            android:id="@+id/themeClay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="56dp"
+            android:text="Terra — barro úmido"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABC — gatilhos e padrões"/>
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:paddingTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registre a sequência: o que veio antes, o que você fez ou sentiu, e o que veio depois. Com o tempo, os gatilhos que se repetem ficam visíveis."/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/sprig"
+                android:contentDescription="@null"/>
+        </LinearLayout>
+        <TextView
+            android:text="A — Antecedente (o que aconteceu antes?)"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/antecedente"
+            android:hint="Situação, gatilho, o que estava acontecendo"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="B — Comportamento (o que você fez, pensou ou sentiu?)"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/comportamento"
+            android:hint="Sua reação: ação, pensamento, emoção"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="C — Consequência (o que aconteceu depois?)"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/consequencia"
+            android:hint="Resultado, como você ficou, o que mudou"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="Contexto / gatilho (opcional)"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/contexto"
+            android:hint="Local, pessoas, horário…"
+            android:inputType="textCapSentences"
+            style="@style/RpdField"/>
+        <Button
+            android:id="@+id/salvarAbc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Salvar"/>
+        <TextView
+            android:textSize="13sp"
+            android:id="@+id/abcLog"
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

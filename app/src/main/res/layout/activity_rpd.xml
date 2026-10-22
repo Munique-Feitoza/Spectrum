@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registro de pensamentos"/>
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:paddingTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preencha no seu ritmo. Só a situação e o pensamento são obrigatórios."/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/sprig"
+                android:contentDescription="@null"/>
+        </LinearLayout>
+        <TextView
+            android:text="1. Situação — o que aconteceu?"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/situacao"
+            android:hint="Onde, quando, com quem…"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="2. Emoção e intensidade (antes)"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/emocao"
+            android:hint="Ex.: ansiosa, triste, com raiva"
+            android:inputType="textCapSentences"
+            style="@style/RpdField"/>
+        <TextView
+            android:id="@+id/intAntesVal"
+            style="@style/RpdLabel"/>
+        <SeekBar
+            android:id="@+id/intAntes"
+            style="@style/RpdSeek"/>
+        <TextView
+            android:text="3. Pensamento automático"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/pensamento"
+            android:hint="O que passou pela sua cabeça?"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="4. Distorções (opcional)"
+            style="@style/RpdSection"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/distortions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="5. Evidências A FAVOR do pensamento"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/evFavor"
+            android:hint="Fatos que apoiam o pensamento"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="6. Evidências CONTRA o pensamento"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/evContra"
+            android:hint="Fatos que contradizem o pensamento"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="7. Pensamento alternativo / equilibrado"
+            style="@style/RpdSection"/>
+        <EditText
+            android:id="@+id/alternativo"
+            android:hint="Uma visão mais realista e gentil"
+            android:inputType="textMultiLine"
+            style="@style/RpdField"/>
+        <TextView
+            android:text="8. Reavaliar"
+            style="@style/RpdSection"/>
+        <TextView
+            android:id="@+id/intDepoisVal"
+            style="@style/RpdLabel"/>
+        <SeekBar
+            android:id="@+id/intDepois"
+            style="@style/RpdSeek"/>
+        <TextView
+            android:id="@+id/crencaAntesVal"
+            style="@style/RpdLabel"/>
+        <SeekBar
+            android:id="@+id/crencaAntes"
+            style="@style/RpdSeek"/>
+        <TextView
+            android:id="@+id/crencaDepoisVal"
+            style="@style/RpdLabel"/>
+        <SeekBar
+            android:id="@+id/crencaDepois"
+            style="@style/RpdSeek"/>
+        <Button
+            android:id="@+id/salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Salvar"/>
+        <TextView
+            android:textSize="13sp"
+            android:id="@+id/rpdLog"
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
