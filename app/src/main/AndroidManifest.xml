@@ -97,7 +97,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name="com.spectrum.app.widget.QuickLogWidgetReceiver"
+            android:name="com.spectrum.app.widget.QuickLogWidgetProvider"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>

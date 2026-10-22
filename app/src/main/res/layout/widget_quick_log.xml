@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/widget_background">
+
+    <!-- Header do Spectrum -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🧠 SPECTRUM"
+            android:textColor="#86E2B6"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="como você está?"
+            android:textColor="#A0A8A2"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- Linha 1 de Emoções -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:id="@+id/btn_happy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_mood_happy"
+            android:text="😊 Feliz"
+            android:textColor="#E8F5E9"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/btn_calm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_mood_calm"
+            android:text="😌 Calmo"
+            android:textColor="#E0F7FA"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/btn_sad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_mood_sad"
+            android:text="😢 Triste"
+            android:textColor="#EDE7F6"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <!-- Linha 2 de Emoções -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:id="@+id/btn_anxious"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_mood_anxious"
+            android:text="⚡ Ansioso"
+            android:textColor="#FFF3E0"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/btn_tired"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_mood_tired"
+            android:text="😴 Cansado"
+            android:textColor="#EEEEEE"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/btn_irritated"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_mood_irritated"
+            android:text="😤 Irritado"
+            android:textColor="#FFEBEE"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <!-- Linha 3: Pausa Sensorial e Abrir App -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/btn_pause_sensory"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1.2"
+            android:background="@drawable/btn_pause_action"
+            android:text="⏸ Pausa Sensorial"
+            android:textColor="#D4EDE0"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="6dp" />
+
+        <TextView
+            android:id="@+id/btn_open_spectrum"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_open_app"
+            android:text="＋ Abrir App"
+            android:textColor="#B8C2BB"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+</LinearLayout>
