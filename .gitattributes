@@ -1,0 +1,4 @@
+# Decompiled Android application source / Third-party dependencies
+# Mark as vendored so GitHub Linguist does not count decompiled bytecode towards profile statistics
+app/src/main/java/** linguist-vendored linguist-detectable=false
+app/src/main/res/** linguist-vendored linguist-detectable=false
